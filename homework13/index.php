@@ -2,8 +2,15 @@
 require('Classroom.php');
 $classroom = new Classroom;
 
+$address1 = new Address();
+$address1->print();
+
 $tembel = $classroom->addStudent('Tembel', 5, 'Z');
 $toPrint = $classroom->echoStudent('Tembel');
+
+$joe = new Student();
+$joe->getAddress()->print();
+$joe->printStudent();
 ?>
 
 <!DOCTYPE html>
